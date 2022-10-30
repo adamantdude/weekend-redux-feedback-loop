@@ -6,8 +6,9 @@ import Feeling from '../Feeling/Feeling';
 import Understanding from '../Understanding/Understanding';
 import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
-import Conclusion from '../Conclusion/Conclusion';
+import Review from '../Review/Review';
 import Home from '../Home/Home';
+import Conclusion from '../Conclusion/Conclusion';
 
 
 function App() {
@@ -32,15 +33,19 @@ function App() {
           <Understanding />
         </Route>
 
-        <Route path="support" exact>
+        <Route path="/support" exact>
           <Support />
         </Route>
 
-        <Route path="comments" exact>
+        <Route path="/comments" exact>
           <Comments />
         </Route>
 
-        <Route path="conclusion" exact>
+        <Route path="/review" exact>
+          <Review />
+        </Route>
+
+        <Route path="/conclusion" exact>
           <Conclusion />
         </Route>
 
