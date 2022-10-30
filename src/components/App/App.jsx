@@ -9,7 +9,7 @@ import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Home from '../Home/Home';
 import Conclusion from '../Conclusion/Conclusion';
-
+import Admin from '../Admin/Admin';
 
 function App() {
 
@@ -47,6 +47,10 @@ function App() {
 
         <Route path="/conclusion" exact>
           <Conclusion />
+        </Route>
+
+        <Route path="/admin" exact>
+          <Admin />
         </Route>
 
       </Router>
