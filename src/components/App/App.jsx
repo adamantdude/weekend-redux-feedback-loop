@@ -1,13 +1,13 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import { Router } from 'express';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import Feeling from '../Feeling/Feeling';
 import Understanding from '../Understanding/Understanding';
 import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
 import Conclusion from '../Conclusion/Conclusion';
+import Home from '../Home/Home';
 
 
 function App() {
@@ -20,23 +20,27 @@ function App() {
       </header>
       <Router>
 
-        <Route>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+
+        <Route path="/feeling" exact>
           <Feeling />
         </Route>
 
-        <Route>
+        <Route path="/understanding" exact>
           <Understanding />
         </Route>
 
-        <Route>
+        <Route path="support" exact>
           <Support />
         </Route>
 
-        <Route>
+        <Route path="comments" exact>
           <Comments />
         </Route>
 
-        <Route>
+        <Route path="conclusion" exact>
           <Conclusion />
         </Route>
 
